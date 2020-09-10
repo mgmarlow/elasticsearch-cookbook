@@ -18,10 +18,16 @@ Run Elasticsearch (defaults to `localhost:9200`):
 elasticsearch.bat
 ```
 
-Run the examples:
+Run the console:
 
 ```
-ruby ./examples/hello.rb
+./bin/console
+```
+
+Now you can interact with the example applications:
+
+```rb
+Megacorp.seed_employees
 ```
 
 ## References
