@@ -6,6 +6,7 @@ GEM
       elasticsearch-transport (= 7.9.0)
     elasticsearch-api (7.9.0)
       multi_json
+    elasticsearch-dsl (0.1.9)
     elasticsearch-transport (7.9.0)
       faraday (~> 1)
       multi_json
@@ -19,6 +20,7 @@ PLATFORMS
 
 DEPENDENCIES
   elasticsearch
+  elasticsearch-dsl
 
 BUNDLED WITH
    2.1.4
