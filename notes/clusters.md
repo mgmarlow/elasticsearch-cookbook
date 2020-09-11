@@ -1,3 +1,5 @@
+# Clusters and Shards
+
 ## Cluster Health
 
 ```

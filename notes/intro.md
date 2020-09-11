@@ -3,6 +3,8 @@
 Open source search engine built on top of Apache Lucene. Provides a RESTful API that hides a lot of the complexity of Lucene.
 
 - Distributed by nature.
+- A document store for JSON documents.
+- All data in every field is indexed by default.
 
 Example HTTP query:
 

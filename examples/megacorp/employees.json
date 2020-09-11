@@ -19,5 +19,19 @@
     "age": 35,
     "about": "I like to build cabinets",
     "interests": ["forestry"]
+  },
+  {
+    "first_name": "Luke",
+    "last_name": "Skywalker",
+    "age": 25,
+    "about": "I like to defeat the Sith.",
+    "interests": ["lightsabers"]
+  },
+  {
+    "first_name": "Obi-wan",
+    "last_name": "Kenobi",
+    "age": 65,
+    "about": "I spend most of my day sleeping.",
+    "interests": ["lightsabers", "dad jokes"]
   }
 ]
