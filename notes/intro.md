@@ -2,6 +2,8 @@
 
 Open source search engine built on top of Apache Lucene. Provides a RESTful API that hides a lot of the complexity of Lucene.
 
+- Distributed by nature.
+
 Example HTTP query:
 
 ```sh
@@ -86,4 +88,3 @@ GET /megacorp/employee/_search
 - Different query types provide different functionality. Some examples: `match`, `filtered`, `match_phrase`.
 - Highlights can be specified to return snippets of text with `<em>` tags demonstrating matches.
 - Aggregations (`aggs`) allow users to generate analytics over searched data.
-
