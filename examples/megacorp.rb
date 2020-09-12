@@ -13,6 +13,10 @@ module Megacorp
     Indexer.new.index_employees
   end
 
+  def search(body)
+    search_service.execute_search(body)
+  end
+
   def search_service
     @search_service ||= SearchService.new
   end

@@ -1,6 +1,6 @@
 # Intro
 
-This cookbook serves as a general guide to understanding and working with Elasticsearch. Included are [notes](./notes.md) on important topics and an [example ruby application](../examples/) to enable easy experimentation.
+This cookbook serves as a general guide to understanding and working with Elasticsearch. Included are [notes](../) on important topics and an [example ruby application](../examples/) to enable easy experimentation.
 
 To run the ruby examples, refer to the [README](../README.md).
 

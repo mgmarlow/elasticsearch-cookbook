@@ -41,26 +41,17 @@ Now you can interact with the example applications:
 # Set up initial data
 Megacorp.seed_employees
 
-# Run search queries
-Megacorp.search_service.by_name('smith')
+# Run pre-built search queries
+Megacorp.search_service.by_last_name('smith')
 
-=> {"took"=>2,
- "timed_out"=>false,
- "_shards"=>{"total"=>1, "successful"=>1, "skipped"=>0, "failed"=>0},
- "hits"=>
-  {"total"=>{"value"=>2, "relation"=>"eq"},
-   "max_score"=>0.4700036,
-   "hits"=>
-    [{"_index"=>"megacorp",
-      "_type"=>"employee",
-      "_id"=>"0",
-      "_score"=>0.4700036,
-      "_source"=>{"first_name"=>"John", "last_name"=>"Smith", "age"=>25, "about"=>"I love to go rock climbing", "interests"=>["sports", "music"]}},
-     {"_index"=>"megacorp",
-      "_type"=>"employee",
-      "_id"=>"1",
-      "_score"=>0.4700036,
-      "_source"=>{"first_name"=>"Jane", "last_name"=>"Smith", "age"=>32, "about"=>"I like to collect rock albums", "interests"=>["music"]}}]}}
+# Or custom queries:
+Megacorp.search({
+  query: {
+    match: {
+      last_name: 'smith'
+    }
+  }
+})
 ```
 
 ## References
