@@ -1,11 +1,13 @@
 # Elasticsearch Cookbook
 
+A collection of Elasticsearch notes and examples.
+
 ## Table of Contents
 
 - [Intro](./notes/intro.md)
 - [Clusters](./notes/clusters.md)
-- [Documents]('./notes/documents.md)
-- [Glossary]('./notes/glossary.md)
+- [Documents](./notes/documents.md)
+- [Glossary](./notes/glossary.md)
 
 ## Installation
 
@@ -18,6 +20,8 @@ Prerequisites:
 ```
 bundle install
 ```
+
+## Running the Examples
 
 Run Elasticsearch (defaults to `localhost:9200`):
 
