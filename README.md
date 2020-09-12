@@ -1,5 +1,12 @@
 # Elasticsearch Cookbook
 
+## Table of Contents
+
+- [Intro](./notes/intro.md)
+- [Clusters](./notes/clusters.md)
+- [Documents]('./notes/documents.md)
+- [Glossary]('./notes/glossary.md)
+
 ## Installation
 
 Prerequisites:
