@@ -14,8 +14,8 @@ A collection of Elasticsearch notes and examples.
 Prerequisites:
 
 - [Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
-- Ruby
-- Bundler
+- [Ruby](https://www.ruby-lang.org/en/downloads/)
+- [Bundler](https://bundler.io/)
 
 ```
 bundle install
@@ -65,5 +65,5 @@ Megacorp.search_service.by_name('smith')
 
 ## References
 
-- [Elasticsearch: The Definitive
-  Guide](https://learning.oreilly.com/library/view/elasticsearch-the-definitive/9781449358532/)
+- [Elasticsearch: The Definitive Guide](https://learning.oreilly.com/library/view/elasticsearch-the-definitive/9781449358532/)
+- [`elasticsearch-ruby`](https://github.com/elastic/elasticsearch-ruby)
