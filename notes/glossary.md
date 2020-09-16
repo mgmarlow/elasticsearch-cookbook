@@ -15,3 +15,5 @@
 **Vertical Scaling**: bigger servers.
 
 **Mapping**: the schema definition for a type.
+
+**Stemming**: reducing a word to its root form (e.g. foxes -> fox).
