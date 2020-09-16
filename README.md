@@ -5,6 +5,7 @@ A collection of Elasticsearch notes and examples.
 ## Table of Contents
 
 - [Intro](./notes/intro.md)
+- [Searching](./notes/searching.md)
 - [Clusters](./notes/clusters.md)
 - [Documents](./notes/documents.md)
 - [Glossary](./notes/glossary.md)

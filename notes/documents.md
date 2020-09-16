@@ -5,11 +5,15 @@ A document is an object that is serialized into JSON and stored in Elasticsearch
 ### Document metadata
 
 - `_index`: where the document lives.
-- `_type`: what class of object the document is.
+- `_type`: what class of object the document is. **Note**: this field is deprecated, [types should no longer be used with documents](https://www.elastic.co/guide/en/elasticsearch/reference/current/removal-of-types.html).
 - `_id`: unique ID for the document.
 - `_source`: the original JSON document that was sent to Elasticsearch.
 
 Note: every type has an associated schema definition (called a **mapping**) that defines the document structure for that type.
+
+## Type Deprecation
+
+In future Elasticsearch versions, [types are being removed](https://www.elastic.co/guide/en/elasticsearch/reference/current/removal-of-types.html). The recommended strategy for future development is to have one type per index, rather than allowing many different types to live within the same index.
 
 ## Document CRUD
 
@@ -18,6 +22,7 @@ Note: every type has an associated schema definition (called a **mapping**) that
 - Versioning on a per-document basis is built-in.
 
 ### Retrieving a single document
+
 - 200 if exists, 404 if doesn't.
 
 ```

@@ -13,3 +13,5 @@
 **Horizontal Scaling**: more servers.
 
 **Vertical Scaling**: bigger servers.
+
+**Mapping**: the schema definition for a type.
