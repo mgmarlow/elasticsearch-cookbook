@@ -6,6 +6,7 @@ A collection of Elasticsearch notes and examples.
 
 - [Intro](./notes/intro.md)
 - [Searching](./notes/searching.md)
+- [Analysis](./notes/analysis.md)
 - [Clusters](./notes/clusters.md)
 - [Documents](./notes/documents.md)
 - [Glossary](./notes/glossary.md)
