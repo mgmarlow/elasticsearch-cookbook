@@ -23,6 +23,27 @@ Searching works across indices, types, and clusters:
 
 Elasticsearch will forward a search within a single index to a primary or replica of every shard in that index. That means that searching one index with five primary shards is equivalent to searching five indices with one primary shard each.
 
+## Query DSL
+
+Query clause vs. filter clause:
+- Filter clauses ask yes/no questions, query clauses ask for relevance.
+- Use query clauses for full-text search or relevance, use filter clauses for everything else.
+
+**Filters**:
+- `term`: exact value match.
+- `terms`: exact match of multiple options.
+- `range`: numbers/dates that fall in a range of values.
+- `exists`/`missing`: find documents that contain or lack certain fields or values.
+- `bool`: combine multiple filter clauses.
+
+**Queries**:
+- `match_all`: match all documents.
+- `match`: full-text search with analyzer.
+- `multi_match`: run the same match query on multiple fields.
+- `bool`: combine multiple query clauses. Differs from filter `bool` in that `_score` is combined for each clause that matches.
+
+Queries can be validated against `GET /_validate/query`.
+
 ## Examples
 
 ### Query-string (lite):
@@ -32,8 +53,6 @@ GET /megacorp/employee/_search?q=last_name:Smith
 ```
 
 ### Standard DSL:
-
-Equivalent example:
 
 ```
 GET /megacorp/employee/_search
@@ -46,7 +65,7 @@ GET /megacorp/employee/_search
 }
 ```
 
-A slightly more complex query:
+Combined query and filter:
 
 ```
 GET /megacorp/employee/_search
@@ -63,19 +82,6 @@ GET /megacorp/employee/_search
                     "last_name" : "smith"
                 }
             }
-        }
-    }
-}
-```
-
-And finally a full-text search:
-
-```
-GET /megacorp/employee/_search
-{
-    "query" : {
-        "match" : {
-            "about" : "rock climbing"
         }
     }
 }
